@@ -6,91 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <!-- Link a CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>TP Integrador Front End - Codo a Codo</title>
 </head>
 
 <body>
+    <!-- Header-->
     <header>
         <div class="header">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="opciones">
-                    <ul class="linksheader1">
-                        <br>
-                        <li>
-                            <a class="conferencia" href="#confciudad" style="text-decoration: none;">La conferencia</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a class="oradores" href="#oradores" style="text-decoration: none;">Los oradores</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a class="lugaryfecha" style="text-decoration: none;">El lugar y la fecha</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a class="orador" href="#convierteteenorador" style="text-decoration: none;">Conviértete en
-                                orador</a>
-                        </li>
-                        <br>
-                        <li>
-                            <a class="tickets" href="#tickets" style="text-decoration: none;">Comprar tickets</a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
-            <div class="logo">
+            <div class="logoCAC">
                 <a href="https://www.buenosaires.gob.ar/educacion/codo-codo">
                     <img src="./imagenes/codoacodo.png" class="codoacodo" alt="codoacodo">
                 </a>
             </div>
-            <h3 class="confbsas">Conf Bs As</h3>
-            <ul class="linksheader2">
+            <h3 class="confHeader">Conf Bs As</h3>
+            <ul class="linksHeader">
                 <li>
-                    <a class="conferencia" href="#confciudad" style="text-decoration: none;">La conferencia</a>
+                    <a class="opcionConferencia" href="#confciudad" style="text-decoration: none;">La conferencia</a>
                 </li>
                 <li>
-                    <a class="oradores" href="#oradores" style="text-decoration: none;">Los oradores</a>
+                    <a class="opcionOradores" href="#oradores" style="text-decoration: none;">Los oradores</a>
                 </li>
                 <li>
-                    <a class="lugaryfecha" style="text-decoration: none;">El lugar y la fecha</a>
+                    <a class="opcionLugFecha" style="text-decoration: none;">El lugar y la fecha</a>
                 </li>
                 <li>
-                    <a class="orador" href="#convierteteenorador" style="text-decoration: none;">Conviértete en
+                    <a class="opcionConvertirOrador" href="#convierteteenorador" style="text-decoration: none;">Conviértete en
                         orador</a>
                 </li>
                 <li>
-                    <a class="tickets" href="#tickets" style="text-decoration: none;">Comprar tickets</a>
+                    <a class="opcionComprarTickets" href="#tickets" style="text-decoration: none;">Comprar tickets</a>
                 </li>
             </ul>
         </div>
     </header>
+
+     <!-- Main-->
     <main>
-        <img id="ba1" src="./imagenes/ba1.jpg" alt="ciudad">
-        <div class="conf">
-            <h1><a id="confciudad">Conf Bs As</a></h1>
+        <img id="fondoMain" src="./imagenes/ba1.jpg" alt="ciudad">
+        <div class="confMain">
+            <h1><a id="confBsAs">Conf Bs As</a></h1>
         </div>
-        <div class="texto">
+        <div class="confTexto">
             <h4>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
                 y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
                 evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
                 esperamos!</h4>
         </div>
         <br>
-        <div class="buttons">
+        <div class="botonesMain">
             <button type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</button>
             <button type="button" class="btn btn-success btn-lg"><a id="tickets">Comprar tickets</a></button>
         </div>
+
         <h6 style="text-align: center; font-weight: lighter;">CONOCE A LOS</h6>
         <h1 style="text-align: center;"><a id="oradores">ORADORES</a></h1>
+
         <br>
-        <div class="allcards">
-            <div class="card1">
+        <div class="tarjetas">
+            <div class="tarjetaSteve">
                 <img src="./imagenes/steve.jpg" class="card-img-top" alt="steve">
                 <div class="card-body">
                     <button type="button" class="btn btn-warning"
@@ -104,7 +86,7 @@
                         magni ratione!</p>
                 </div>
             </div>
-            <div class="card2">
+            <div class="tarjetaBill">
                 <img src="./imagenes/bill.jpg" class="card-img-top" alt="bill">
                 <div class="card-body">
                     <button type="button" class="btn btn-warning"
@@ -118,7 +100,7 @@
                         magni ratione!</p>
                 </div>
             </div>
-            <div class="card3">
+            <div class="tarjetaAda">
                 <img src="./imagenes/ada.jpeg" class="card-img-top" alt="ada">
                 <div class="card-body">
                     <button type="button" class="btn btn-secondary"
@@ -139,8 +121,8 @@
                 <img src="./imagenes/honolulu.jpg" class="hawaii" alt="hawaii" style="width: 100%">
             </div>
             <div class="col-6 themed-grid-col text">
-                <h1 class="bsasoctubre">Bs As - Octubre</h1>
-                <p class="bsastexto">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
+                <h1 class="textoAlMedioTitulo">Bs As - Octubre</h1>
+                <p class="textoAlMedio">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los
                     Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque
                     el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y
                     el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad
@@ -168,10 +150,8 @@
         </div>
         <br>
         <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 200px"></textarea>
-            <label for="floatingTextarea2" style="font-size: 25px; color: rgba(154,151,158,255)">Sobre qué quieres
-                hablar?</label>
+            <textarea class="form-control" placeholder="Sobre que quieres hablar?" id="floatingTextarea2" style="height: 200px"></textarea>
+            <label for="floatingTextarea2" style="font-size: 25px; color: rgba(154,151,158,255)">Sobre qué quieres hablar?</label>
         </div>
         <h6 class="titulo">Recuerda incluir un título para tu charla</h6>
         <br>
@@ -179,6 +159,7 @@
     </main>
 
 </body>
+
 <footer>
     <ul class="footer">
         <li class="preguntas"><a href="#preguntas" style="text-decoration: none; color: white"> Preguntas frecuentes</a>
